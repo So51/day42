@@ -1,0 +1,11 @@
+function Person(first, last, age, eye) {
+ this.firstName = first;
+ this.lastName = last;
+ this.age = age;
+ this.eyeColor = eye;
+}
+var myFather = new Person("Mohammed", "Al-Otaibi", 53, "black");
+myFather.name = function (){
+  return this.firstName + " "+ this.lastName ;
+};
+document.write ("My father is "+ myFather.name());
